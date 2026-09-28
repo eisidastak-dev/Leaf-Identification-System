@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="528.0" prefWidth="618.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ColourPickerController">
+   <children>
+      <ImageView fx:id="colourPickerImageView" fitHeight="423.0" fitWidth="517.0" layoutX="51.0" layoutY="53.0" onMousePressed="#getPixelColour" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="CROSSHAIR" />
+         </cursor></ImageView>
+      <ToggleButton fx:id="toggleButton" layoutX="37.0" layoutY="479.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="191.0" text="Click To Begin Selecting Colour" />
+      <TextField fx:id="redText" editable="false" layoutX="44.0" layoutY="14.0" promptText="Red" />
+      <TextField fx:id="greenText" editable="false" layoutX="235.0" layoutY="14.0" promptText="Green" />
+      <TextField fx:id="blueText" editable="false" layoutX="430.0" layoutY="14.0" promptText="Blue" />
+      <Rectangle fx:id="colourRectangle" arcHeight="5.0" arcWidth="5.0" fill="#eef0f2" height="40.0" layoutX="246.0" layoutY="479.0" stroke="BLACK" strokeType="INSIDE" width="318.0" />
+   </children>
+</AnchorPane>
