@@ -7,10 +7,10 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class HelloApplication extends Application {
+public class AutumnLeaveSystem extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("MainView.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(AutumnLeaveSystem.class.getResource("MainView.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1400, 900);
         stage.setTitle("Autumn Leave Identification System");
         stage.setScene(scene);
